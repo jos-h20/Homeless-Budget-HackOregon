@@ -50,7 +50,7 @@ echo 'Creating vagrant user in PostgreSQL...'
 su postgres -c 'psql -c "CREATE USER vagrant WITH CREATEUSER;"' >> $LOGFILE
 
 echo 'Creating vagrant password in PostgreSQL...'
-su postgres -c 'psql -c "ALTER USER vagrant PASSWORD vagrant;"' >> $LOGFILE
+su postgres -c 'psql -c "ALTER USER vagrant PASSWORD 'vagrant';"' >> $LOGFILE
 
 echo 'Creating vagrant database in PostgreSQL...'
 su postgres -c 'psql -c "CREATE DATABASE vagrant;"' >> $LOGFILE

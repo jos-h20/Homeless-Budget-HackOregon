@@ -77,9 +77,9 @@ WSGI_APPLICATION = 'homeless_budget.wsgi.application'
 DATABASES = {
    'default': {
        'ENGINE': 'django.db.backends.postgresql',
-       'NAME': 'vagrant',
-       'USER': 'vagrant',
-       'PASSWORD': 'vagrant',
+       'NAME': 'django',
+       'USER': 'admin',
+       'PASSWORD': 'admin',
        'HOST': 'localhost',
        'PORT': '5432',
    }
